@@ -28,7 +28,7 @@ Whether you're a beginner or an experienced programmer, this repository is for y
 - Easy-to-follow explanations for each topic.
 - Organized folder structure by topics.
 - Continuous updates with new problems and solutions.
-- Code written in **C++**.
+- Code written in **python**.
 
 ---
 
