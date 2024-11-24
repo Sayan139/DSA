@@ -8,8 +8,6 @@ Welcome to the **DSA Repository**! This repository contains implementations of v
 - [Features](#features)
 - [Folder Structure](#folder-structure)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -38,25 +36,9 @@ Whether you're a beginner or an experienced programmer, this repository is for y
 
 ```plaintext
 DSA/
-|-- Arrays/
-|   |-- Problems/
-|   |-- SortingAlgorithms.cpp
-|
-|-- LinkedLists/
-|   |-- SinglyLinkedList.cpp
-|   |-- DoublyLinkedList.cpp
-|
-|-- Trees/
-|   |-- BinaryTreeTraversal.cpp
-|   |-- BinarySearchTree.cpp
-|
-|-- Graphs/
-|   |-- BFS_DFS.cpp
-|   |-- Dijkstra.cpp
-|
-|-- DynamicProgramming/
-|   |-- Knapsack.cpp
-|   |-- LongestCommonSubsequence.cpp
+|-- basic/
+|   |-- maths/
+|   |-- patterns
 |
 |-- README.md
 ```
