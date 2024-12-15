@@ -5,11 +5,11 @@ using namespace std;
 // Function to count the number of digits in a number
 int countNum(int n) {
     if (n == 0)
-        return 0; // Handle the edge case when the value of n is 0
+        return 0;
     int count = 0;
     while (n != 0) {
         count++;
-        n /= 10; // Integer division ensures no floating-point result
+        n /= 10;
     }
     return count;
 }
@@ -22,16 +22,15 @@ int countNumOptimal(int n) {
 // Function to count the number of digits in n that divide n evenly
 int evenlyDivides(int n) {
     if (n == 0)
-        return 0; // Handle the edge case when the value of n is 0
-    int count = 0; // Variable to store the count of digits
-    int temp = n; // Temporary variable to process the number
+        return 0;
+    int count = 0;
+    int temp = n;
     while (temp != 0) {
-        int lastDigit = temp % 10; // Extract the last digit of the number
-        // Check if the digit is non-zero and divides n evenly
+        int lastDigit = temp % 10;
         if (lastDigit != 0 && n % lastDigit == 0) {
-            count++; // Increment the count if the condition is met
+            count++;
         }
-        temp /= 10; // Remove the last digit from temp
+        temp /= 10; 
     }
     return count;
 }

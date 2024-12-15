@@ -4,16 +4,16 @@ using namespace std;
 // Function to check if a number is a palindrome
 bool isPalindrome(int x) {
     if (x < 0)
-        return false; // Negative numbers are not palindromes
+        return false; 
 
     int rev = 0;
-    int temp = x; // Temporary variable to process the number
+    int temp = x;
     while (temp != 0) {
-        int lastDigit = temp % 10;       // Extract the last digit
-        rev = (rev * 10) + lastDigit;   // Build the reversed number
-        temp /= 10;                     // Remove the last digit
+        int lastDigit = temp % 10;      
+        rev = (rev * 10) + lastDigit;   
+        temp /= 10;                     
     }
-    return rev == x; // Check if the reversed number equals the original
+    return rev == x;
 }
 
 int main() {
