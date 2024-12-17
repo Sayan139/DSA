@@ -11,12 +11,12 @@ bool canjump(vector <int> arr){
 }
 int minjumpsgame(vector <int> arr){
     int n = arr.size();
-    if(n<=1) return 0;
+    if(n<1) return 0;
     if(arr[0]==0) return -1;
     int jumps = 0,currentend=0,farthest=0;
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n-1; i++){
         farthest = max(farthest,i+arr[i]);
-        if(i==farthest){
+        if(i==currentend){
             jumps++;
             currentend = farthest;
             if(currentend >= n-1){
