@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+//question : https://www.geeksforgeeks.org/problems/jump-game/1
 bool canJump(vector<int>& arr) {
     int n = arr.size();
     int maxlen = 0;
@@ -14,7 +14,7 @@ bool canJump(vector<int>& arr) {
     }
     return true;
 }
-
+//question : https://www.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1
 int minJumpsGame(vector<int>& arr) {
     int n = arr.size();
     if (n < 1) {
