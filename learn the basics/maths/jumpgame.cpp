@@ -27,7 +27,7 @@ int minJumpsGame(vector<int>& arr) {
     for (int i = 0; i < n - 1; ++i) {
         farthest = max(farthest, i + arr[i]);
         if (i == currentEnd) {
-            ++jumps;
+            jumps++;
             currentEnd = farthest;
             if (currentEnd >= n - 1) {
                 return jumps;

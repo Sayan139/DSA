@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 int gcd(int a,int b){
-    if(a>0 && b>0){
-        if(a>b) a=a%b;
-        else b=b%a;
+    if(b!=0){
+        int temp = b;
+        b= a%b;
+        a = temp;
     }
-    return (a==0) ? b:a;
+    return a;
 }
 int lcm(int a,int b){
     return (a*b)/gcd(a,b);
