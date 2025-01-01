@@ -15,6 +15,7 @@ using namespace std;
 // Travel the array once and increment the corresponding counting variables
 void better(vector <int> &arr){
 	int n = arr.size();
+	int cnt0 = 0;
 	int cnt=0,cnt1=0,cnt2=0;
 	for(int i=0; i<n; i++){
 		if(arr[i]==0) cnt0++;
@@ -54,6 +55,7 @@ void better(vector <int> &arr){
 // Finally, our array should be sorted.
 
 void optimal(vector <int> &arr){
+	int n = arr.size();
 	int low=0,mid=0,high=n-1;
 	while(mid <= high){
 		if(arr[mid]==0){
