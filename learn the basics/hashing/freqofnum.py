@@ -1,0 +1,5 @@
+array = [10, 20, 10, 30, 20, 30, 40, 10, 50, 30, 20, 10, 40, 50, 50, 20, 30]
+hash_array = [0] * 6
+for i in array:
+    hash_array[i//10]+=1
+print(hash_array)
