@@ -23,4 +23,4 @@ void leftrotatek(vector <int> arr,int k){
     reverse(arr.begin()+k,arr.end());
     reverse(arr.begin(),arr.end());
 }
-//here for information the reverse function works till 0 to n-1 so that's why in the first it reaches till n-1 and in the second call the it starts s from k not k-1 as we discussed the concept 
+//here for information the reverse function //works till 0 to n-1 so that's why //in the first it reaches till n-1 and in //the second call the it starts s from k //not k-1 as we discussed the concept 
