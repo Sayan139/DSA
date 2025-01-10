@@ -57,8 +57,6 @@ vector <int> sol1(vector <int> arr1,vector <int> arr2){
 // arr1[ i ] > arr2[ j ]
 // arr1[ i ] > arr2[ j ] so we need to insert arr2[ j ] in union. IF the last element in the union vector is not equal to arr2[ j ], then insert in the union, else don’t insert. After checking Increment j. After traversing if any elements are left in arr1 or arr2 check for condition and insert in the union.
 
-#include <vector>
-using namespace std;
 
 vector<int> unionOfArrays(vector<int>& arr1, vector<int>& arr2) {
     int i = 0, j = 0;
