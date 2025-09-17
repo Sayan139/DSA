@@ -2,7 +2,10 @@
 using namespace std;
 // optimal sol
 /*
-in this sol you were need to divide the num 
+in this sol you were need to divide the num/10 until it becomes 0 and add it to the rev
+variable by the formula rev = rev * 10 + temp
+and at the end return the is rev == orginal num if not return false
+tc : O(log(10)) sc : O(1)
 */
 bool reverse(int n){
     int rev = 0;

@@ -1,5 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
+// bruite force and better :
+/*
+bruite:
+here you need to iterate till the smaller element out of them 2 num and find the
+greatest num that divides both and its going to be ans if not found any mathc return n * m
+better : 
+here you just need to iterate from the min(n,m) to 1 instead of 1 to min(n,m) its gives the ans
+faster
+tc : O(min(n,m)) sc : O(1)
+*/
 // optimal sol : using Euclidean Algorithm is a method 
 /*
 To find the GCD of n1 and n2 where n1 > n2:
