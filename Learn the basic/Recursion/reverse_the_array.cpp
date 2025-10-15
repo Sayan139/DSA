@@ -1,12 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-/*
-optimal sol : (for recursion problems)
-Use recursion — swap elements at start and end,
-then recursively move inward.
-Elegant and short but uses call stack space.
-🕒 TC: O(n) 💾 SC: O(n) (recursion stack)
-*/
 void helper(vector<int>& arr, int start, int end) {
     if (start >= end) return;
     swap(arr[start], arr[end]);

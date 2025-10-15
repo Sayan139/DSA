@@ -1,14 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-/*
-1️⃣ Number Hashing:
-We create an integer array (hash) to store frequency counts of numbers.
-Each index represents the number, and the value represents its count.
-Example: For arr = [2, 5, 2, 5, 5], hash[2] = 2, hash[5] = 3.
-🕒 TC: O(n) 💾 SC: O(max_element)
-⚠️ Not suitable for very large elements (like 10^9), since array size becomes huge.
-*/
 void numberHashing(vector<int>& arr) {
     int maxVal = *max_element(arr.begin(), arr.end());
     vector<int> hash(maxVal + 1, 0);
@@ -65,15 +56,6 @@ void divisionHashing(vector<int>& arr, int m) {
     for (int x : hash[idx]) cout << x << " ";
     cout << endl;
 }
-
-/*
-💡 Summary:
-- Hashing stores data in a way that allows O(1) access.
-- Number hashing → Best for small ranges.
-- Character hashing → Maps alphabets directly.
-- map / unordered_map → Ideal for large or unknown ranges.
-- Division method → Introduces modular hashing & collision handling via chaining.
-*/
 int main() {
     vector<int> arr = {2, 5, 16, 28, 139};
     string s = "banana";
