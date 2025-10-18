@@ -2,11 +2,7 @@
 using namespace std;
 
 /*
-1️⃣ With Duplicates in Input:
-- Sort both arrays and merge like merge sort.
-- Skip duplicates while pushing to result.
-🕒 TC: O(n log n + m log m) for sorting + O(n + m) merge
-💾 SC: O(n + m) for result array
+1️⃣ With Duplicates in Input
 */
 vector<int> findUnionWithDuplicates(vector<int>& a, vector<int>& b) {
     sort(a.begin(), a.end());
@@ -38,11 +34,7 @@ vector<int> findUnionWithDuplicates(vector<int>& a, vector<int>& b) {
 }
 
 /*
-2️⃣ No Duplicates in Input:
-- Input arrays already have unique elements.
-- Simply merge after sorting, no duplicate checks needed.
-🕒 TC: O(n log n + m log m) for sorting + O(n + m) merge
-💾 SC: O(n + m) for result array
+2️⃣ No Duplicates in Input
 */
 vector<int> findUnionNoDuplicates(vector<int>& a, vector<int>& b) {
     sort(a.begin(), a.end());

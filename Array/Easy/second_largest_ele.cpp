@@ -1,11 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-/*
-Optimal Solution:
-Iterate once through the array to find both the largest and second largest elements.
-We update `largest` and `second_largest` as we traverse the array.
-🕒 TC: O(n) 💾 SC: O(1)
-*/
 int getSecondLargest(vector<int> &arr) {
     int largest = INT_MIN;
     int second_largest = INT_MIN;
@@ -20,6 +14,6 @@ int getSecondLargest(vector<int> &arr) {
         }
     }
 
-    if(second_largest == INT_MIN) return -1; // No second largest found
+    if(second_largest == INT_MIN) return -1;
     return second_largest;
 }
