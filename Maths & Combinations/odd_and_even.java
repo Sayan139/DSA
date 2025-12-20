@@ -4,7 +4,7 @@ public class odd_and_even {
             System.out.println("Even number");
         }
         else{
-            System.out.println("Odd number ");
+            System.out.println("Odd number");
         }
     }
     public static void main(String[] args) {
